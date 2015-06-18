@@ -105,7 +105,7 @@ struct genl_family *nl80211;
 #endif
 
 #ifndef WIFI_DRIVER_FW_PATH_PARAM
-#define WIFI_DRIVER_FW_PATH_PARAM	"/data/misc/wlan/fwpath"
+#define WIFI_DRIVER_FW_PATH_PARAM	"/system/etc/firmware/wlan/fwpath"
 #endif
 
 #define WIFI_DRIVER_LOADER_DELAY	1000000
