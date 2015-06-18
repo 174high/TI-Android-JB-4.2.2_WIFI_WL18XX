@@ -1,0 +1,6 @@
+dd if=/dev/zero of=./userdata.img bs=1M count=192
+mkfs.ext4 userdata.img
+sudo mount -t ext4 -o loop userdata.img mnt-point/
+cp -rfp ../out/target/product/beagleboneblack/data/* mnt-point/
+cp -rfp ../out/target/product/beagleboneblack/root/data/* mnt-point/
+sudo umount mnt-point
