@@ -206,15 +206,14 @@ on post-fs-data
     # give system access to wpa_supplicant.conf for backup and restore
     mkdir /data/misc/wifi 0770 wifi wifi
     chmod 0660 /data/misc/wifi/wpa_supplicant.conf
-    chown wifi wifi /system/etc/wifi/wpa_supplicant.conf  
+    chown wifi wifi /data/misc/wifi/wpa_supplicant.conf  
     chmod 0660 /data/misc/wifi/p2p_supplicant.conf
-    chown wifi wifi /system/etc/wifi/p2p_supplicant.conf
+    chown wifi wifi /data/misc/wifi/p2p_supplicant.conf
     chmod 0660 /data/misc/wifi/hostapd.conf	
-    chown wifi wifi /system/etc/wifi/hostapd.conf
+    chown wifi wifi /data/misc/wifi/hostapd.conf
     chmod 0660 /data/misc/wifi/udhcpd.conf
-    chown wifi wifi /system/etc/wifi/udhcpd.conf
+    chown wifi wifi /data/misc/wifi/udhcpd.conf
     setprop wifi.interface "wlan0" 
-    mount -o remount,rw /dev/block/stl6 /system
 
     mkdir /data/local 0751 root root
 
